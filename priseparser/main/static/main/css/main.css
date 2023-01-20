@@ -1,0 +1,155 @@
+body {
+    background: #ACC6B0;
+
+}
+
+
+aside {
+    float: left;
+    background: #14665A;
+    background-image: url("../img/side.jpg");
+    width: 20%;
+    padding: 2%;
+    height: 100vh;
+    color: #D57D84;
+    border-right: 5px solid #4d4d4d;
+    text-decoration: none;
+}
+
+aside img {
+    width: 20%;
+    float: left;
+}
+
+aside .logo {
+    font-family: American Typewriter, sans-serif;
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: -5px;
+}
+
+.menu {
+  text-decoration: none;
+}
+
+aside ul{list-style: none}
+aside ul li{
+    font-family: American Typewriter, sans-serif;
+    color: #FFFFF0;
+    font-size: 20px;
+    text-decoration: none;
+    opacity: 0.7;
+    display: block;
+    margin-top: 20px;
+    margin-left: 40px;
+    transition: transform .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #D57D84;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+main .features {
+    float: left;
+    color: #093112;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+main .features h1 {font-size: 50px}
+main .features p {max-width: 400px; margin: 20px auto}
+
+
+
+
+/* В body устанавливаем шрифт, ширину и высоту, а также фон */
+main .container {
+  font-family: American Typewriter, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 100%;
+  min-height: 100vh;
+  display: run-in;
+  justify-content: center; /* чтобы контейнер */
+  align-items: center; /* был по центру */
+  max-width: 1000px;
+  padding: 0 20px;
+    /*background-image: url("../img/kk.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: 100%, cover;*/
+}
+
+main .container h1 {max-width: 500px; margin: 20px auto}
+main .container p {max-width: 650px; margin: 20px auto}
+
+/* Стили самой формы */
+main .content {
+  display: run-in; /* делаем колонки в ряд */
+  align-items: center; /* выравниваем по центру */
+  justify-content: space-between; /* колонки растянутся на всю ширину */
+  background: #FFFFF0;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    font-size: 20px;
+  font-weight: 600;
+  color: #093112;
+  margin-bottom: 10px;
+}
+
+/* Контейнер для input'ов формы */
+.input-box {
+  height: 50px; /* по сути задаем высоту input'а */
+  width: 100%; /* ширина на всю ширину правой колонки (с учетом padding) */
+  margin-bottom: 20px; /* отступаем снизу 20px */
+}
+
+/* Стили для input и textarea (поле сообщение) */
+.input-box input,
+.input-box textarea {
+  height: 100%; /* растягиваем на всю высоту контейнера 50px */
+  width: 100%; /* растягиваем на всю ширину */
+  border: none; /* убираем внешние края */
+  border-radius: 5px; /* скругляем края */
+  background: #FFFFF0; /* задаем цвет фона */
+  padding: 0 20px; /* отступ справа и слева 20px */
+}
+
+/* Отдельно стилизуем поле сообщение */
+.input-box textarea {
+  resize: none; /* чтобы нельзя было менять высоту */
+  padding: 20px;
+  font-family: American Typewriter, sans-serif;
+}
+
+/* Это контейнер для поля сообщение */
+.message-box {
+  min-height: 110px; /* минимальная высота 110px */
+}
+
+/* Стили для контейнера кнопки */
+.button {
+    display: inline-block; /* делаем блочно-строчный элемент */
+}
+
+/* Стили для самой кнопки */
+.button input[type="button"] {
+  color: #FFFFF0;
+  font-size: 18px;
+  background: #093112;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+  transition: 0.2s; /* чтобы плавно менялся цвет при наведении (:hover) */
+}
+
+/* Меняем цвет фона при наведении на кнопку */
+.button input[type="button"]:hover {
+  background: #427619;
+}

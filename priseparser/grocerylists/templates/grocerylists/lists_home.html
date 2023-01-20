@@ -1,0 +1,22 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Your grocery lists{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Your grocery lists</h1>
+        {% if grocerylists %}
+            {% for el in grocerylists %}
+                <a href=""><button class="btn btn-info"><i class="fas fa-plus-circle"></i> Add a list </button></a>
+                <div class="container">
+                    <h3>{{ el.title }}</h3>
+                    <p>{{ el.note }}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>You have no lists yet. Let's create one!</p>
+            <a href=""><button class="btn btn-info"><i class="fas fa-plus-circle"></i> Add a list </button></a>
+        {% endif %}
+
+    </div>
+{% endblock %}
